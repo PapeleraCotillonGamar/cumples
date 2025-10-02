@@ -114,7 +114,7 @@
       let volume = dataArray.reduce((a, b) => a + b, 0) / dataArray.length;
 
       // Solo apaga si ya está permitido
-      if (micEnabled && volume > 80) {
+      if (micEnabled && volume > 50) {
         stopFlame();
         return;
       }
